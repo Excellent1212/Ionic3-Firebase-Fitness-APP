@@ -1,0 +1,53 @@
+<ion-header no-border>
+  <!-- <ion-navbar color="xcore" hideBackButton="true" text-center class="navbar-custom"> -->
+  <ion-navbar hideBackButton="true" transparent>
+    <!-- <ion-title class="title-custom">
+      Access
+    </ion-title> -->
+    <!-- <ion-buttons end>
+      <button ion-button icon-only (click)="showInfoApp()">
+        <img width="100px" src="../../assets/imgs/XCORELOGO-8.png">
+      </button>
+    </ion-buttons> -->
+  </ion-navbar>
+</ion-header>
+
+<ion-content no-padding class="ion-content-custom">
+  <ion-slides pager="false" autoplay="3000" loop="true" speed="2500" effect="fade">
+    <ion-slide class="slide-background swiper-no-swiping" *ngFor="let background of backgrounds" [ngStyle]="{'background-image': 'url(' + background +')'}">
+    </ion-slide>
+  </ion-slides>
+
+<div class="login-container" ion-fixed>
+<form mode="ios" (ngSubmit)="LogInForm()">
+  <ion-item color="dark" class="ion-item-slide">
+    <ion-label stacked class="label-color" mode="ios"><ion-icon ios="md-mail" md="md-mail" name="mail"></ion-icon> e-mail</ion-label>
+    <!-- <ion-icon stacked ios="md-mail" md="md-mail" item-start></ion-icon> -->
+    <ion-input mode="ios" type="email" id="email" [(ngModel)]="login.email" name="email"></ion-input>
+  </ion-item>
+
+  <ion-item color="dark" class="ion-item-slide">
+    <ion-label stacked class="label-color" mode="ios"><ion-icon ios="md-key" md="md-key"></ion-icon> password</ion-label>
+    <ion-input mode="ios" [type]="passwordType" id="password" [(ngModel)]="login.password" name="password"></ion-input>
+    <ion-icon ios="ios-eye" md="ios-eye" name="eye" [color]="passwordShown === true ? 'gray' : 'white'" item-end (click)="showPassword()">
+      <div class="viewTap" (click)="showPassword()"></div>
+    </ion-icon>
+   </ion-item>
+
+	<div padding text-right>
+	  <button ion-button block type="submit" mode="md" color="login">Log In</button>
+	  <span text-uppercase class="text-white"><a href="#"><ion-icon name="key"></ion-icon> I forgot my password</a></span>
+  </div>
+</form>
+</div>
+<ion-grid>
+<div class="ion-footer-custom" text-center>
+    <!-- <div text-center>
+      <img width="100px" src="../../assets/imgs/XCORELOGO-BLUE.png" (click)="showInfoApp()">
+    </div> -->
+</div>
+</ion-grid>
+</ion-content>
+
+
+

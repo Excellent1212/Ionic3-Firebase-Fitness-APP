@@ -1,0 +1,7 @@
+{
+  "name": "xCore-App-Apartados",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

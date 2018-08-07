@@ -1,0 +1,60 @@
+<!--
+  Generated template for the ClassesPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="darkfitness">
+    <ion-title class="title-custom" text-center>Scheduled classes</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <ion-list xml:space="preserve">
+        <ion-item class="ion-item-custom" (press)="pressClassDetails($event)">
+          <ion-thumbnail item-start>
+              <svg-icon src="../../assets/icons-pack-one/stationary-bicycle.svg" [svgStyle]="{ 'width.px':70 }" ></svg-icon>
+          </ion-thumbnail>
+          <div><ion-icon name="arrow-dropright"></ion-icon> Spinning</div>
+          <div><ion-icon name="alarm"></ion-icon> xx/xx/xxx xx:xx am</div>
+          <button ion-button clear item-end (click)="pushViewClass()">View</button>
+        </ion-item>
+        <ion-item class="ion-item-custom" (press)="pressClassDetails($event)">
+            <ion-thumbnail item-start>
+              <svg-icon src="../../assets/icons-pack-one/running.svg" [svgStyle]="{ 'width.px':70 }"></svg-icon>
+            </ion-thumbnail>
+            <div><ion-icon name="arrow-dropright"></ion-icon> Crossfit</div>
+            <div><ion-icon name="alarm"></ion-icon> xx/xx/xxx xx:xx am</div>
+            <button ion-button clear item-end (click)="pushViewClass()">View</button>
+        </ion-item>
+        <ion-item class="ion-item-custom" (press)="pressClassDetails($event)">
+            <ion-thumbnail item-start>
+                <svg-icon src="../../assets/icons-pack-one/running-1.svg" [svgStyle]="{ 'width.px':70 }"></svg-icon>
+              </ion-thumbnail>
+            <div><ion-icon name="arrow-dropright"></ion-icon> Cardio</div>
+            <div><ion-icon name="alarm"></ion-icon> xx/xx/xxx xx:xx am</div>
+            <button ion-button clear item-end (click)="pushViewClass()">View</button>
+        </ion-item>
+        <ion-item class="ion-item-custom" (press)="pressClassDetails($event)">
+            <ion-thumbnail item-start>
+                <svg-icon src="../../assets/icons-pack-two/010-strong.svg" [svgStyle]="{ 'width.px':70 }"></svg-icon>
+            </ion-thumbnail>
+            <div><ion-icon name="arrow-dropright"></ion-icon> Weight training</div>
+            <div><ion-icon name="alarm"></ion-icon> xx/xx/xxx xx:xx am</div>
+            <button ion-button clear item-end (click)="pushViewClass()">View</button>
+        </ion-item>
+        <ion-item class="ion-item-custom" (press)="pressClassDetails($event)">
+            <ion-thumbnail item-start>
+                <svg-icon src="../../assets/icons-pack-two/002-yoga.svg" [svgStyle]="{ 'width.px':70 }"></svg-icon>
+            </ion-thumbnail>
+            <div><ion-icon name="arrow-dropright"></ion-icon> Yoga</div>
+            <div><ion-icon name="alarm"></ion-icon> xx/xx/xxx xx:xx am</div>
+            <button ion-button clear item-end (click)="pushViewClass()">View</button>
+        </ion-item>
+
+      </ion-list>
+</ion-content>

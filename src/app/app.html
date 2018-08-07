@@ -1,0 +1,54 @@
+<ion-menu id="profileMenu" [content]="content">
+    <ion-content no-padding>
+            <ion-item-group text-center class="profile-container">
+                <div class="profile-bg">
+                </div>
+                <div class="profile-info" (click)="pushUserSettings()">
+                    <div class="profile-picture">
+                        <img class="rounded-picture" src="../assets/imgs/Stylish-Attitude-Girl-Images-for-FB-Profile-Pic.jpg">
+                      </div>
+                    <h3><ion-icon ios="md-person" md="md-person"></ion-icon> Carolina Rodriguez</h3>
+                    <small ng-show="gymReceived"><ion-icon ios="md-home" md="md-home"></ion-icon> Gym: {{ gymReceived }} </small>
+                </div>
+                <hr>
+
+                <!-- <ion-grid>
+                    <ion-row>
+                      <ion-col>
+                        <div class="profile-picture">
+                          <img class="rounded-picture" src="../assets/imgs/Stylish-Attitude-Girl-Images-for-FB-Profile-Pic.jpg">
+                        </div>
+                      </ion-col>
+                      <ion-col>
+                        <div class="user-name" text-left>
+                          <p>Carolina Rodriguez</p>
+                          <small>xCore Gym</small>
+                        </div>
+                      </ion-col>
+                    </ion-row>
+                  </ion-grid> -->
+            </ion-item-group>
+            <ion-item-group padding class="introjs-relativePosition">
+                <ion-item class="ion-item-custom" (click)= "pushClasses()" >Scheduled classes <ion-badge item-end>6</ion-badge></ion-item>
+                <ion-item class="ion-item-custom">Scheduled</ion-item>
+                <ion-item class="ion-item-custom" (click) = "pushShowPosts()" >Show posts</ion-item>
+                <ion-item class="ion-item-custom">Angola</ion-item>
+                <ion-item class="ion-item-custom">Argentina</ion-item>
+                <ion-item class="ion-item-custom">Angola</ion-item>
+                <ion-item class="ion-item-custom">Argentina</ion-item>
+                <ion-list-header>
+                  Preferences
+                </ion-list-header>
+                  <ion-item class="ion-item-custom" (click)="popUserGyms($event)">Select a Gym</ion-item>
+              </ion-item-group>
+            <ion-item-group>
+                <button mode="md" ion-button class="ExitLogOut" color="danger" (click)="logOut()">
+                        <span>logout </span>
+                        <ion-icon name="exit"></ion-icon>
+                </button>
+            </ion-item-group>
+
+    </ion-content>
+</ion-menu>
+
+<ion-nav #content #rootNavController [root]="rootPage"></ion-nav>
