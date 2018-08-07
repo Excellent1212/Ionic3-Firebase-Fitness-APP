@@ -19,14 +19,14 @@ javac 1.8.0_181
 
 ## Screenshots
 
-![alt text](screenshots/Screenshot_1.png.png)
-![alt text](screenshots/Screenshot_2.png.png)
-![alt text](screenshots/Screenshot_3.png.png)
-![alt text](screenshots/Screenshot_4.png.png)
-![alt text](screenshots/Screenshot_5.png.png)
-![alt text](screenshots/Screenshot_6.png.png)
-![alt text](screenshots/Screenshot_7.png.png)
-![alt text](screenshots/Screenshot_8.png.png)
+![alt text](screenshots/Screenshot_1.png)
+![alt text](screenshots/Screenshot_2.png)
+![alt text](screenshots/Screenshot_3.png)
+![alt text](screenshots/Screenshot_4.png)
+![alt text](screenshots/Screenshot_5.png)
+![alt text](screenshots/Screenshot_6.png)
+![alt text](screenshots/Screenshot_7.png)
+![alt text](screenshots/Screenshot_8.png)
 
 ## Built With
 
