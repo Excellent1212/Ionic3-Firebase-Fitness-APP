@@ -1,6 +1,6 @@
 # Fitness-App
 
-This is just a basic ionic app, to show fitness stuff. Right now there is only de structure of the app.
+This is just a basic ionic app, to show fitness stuff. Right now there is only the structure of the app.
 
 ## Getting Started
 
