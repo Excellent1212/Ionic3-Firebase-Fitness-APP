@@ -11,10 +11,10 @@ ionic serve
 
 ### Prerequisites
 
-What things you need?
-node
-npm
-ionic 4.0.4
+What things you need?<br />
+node<br />
+npm<br />
+ionic 4.0.4<br />
 javac 1.8.0_181
 
 ## Screenshots
