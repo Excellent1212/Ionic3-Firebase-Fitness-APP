@@ -4,9 +4,9 @@ This is just a basic ionic app, to show fitness stuff. Right now there is only t
 
 ## Getting Started
 
-git clone https://github.com/CarlosTheory/fitnessApp-ionic.git
-cd fitnessApp-ionic
-npm install
+git clone https://github.com/CarlosTheory/fitnessApp-ionic.git <br />
+cd fitnessApp-ionic <br />
+npm install <br />
 ionic serve
 
 ### Prerequisites
