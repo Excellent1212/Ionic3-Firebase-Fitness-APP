@@ -4,7 +4,7 @@ This is just a basic ionic app, to show fitness stuff. Right now there is only t
 
 ## Getting Started
 
-git clone https://github.com/CarlosTheory/fitnessApp-ionic.git <br />
+git clone https://github.com/Excellent1212/Ionic3-Firebase-Fitness-APP.git <br />
 cd fitnessApp-ionic <br />
 npm install <br />
 ionic serve
